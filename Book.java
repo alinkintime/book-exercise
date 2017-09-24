@@ -25,15 +25,15 @@ class Book
     }
 
     /**Return's author, title and pages */
-    private String getAuthor()
+    public String getAuthor()
     {
         return author;
     }
-    private String getTitle()
+    public String getTitle()
     {
         return title;
     }
-    private int getPages()
+    public int getPages()
     {
         return pages;
     }
@@ -47,5 +47,10 @@ class Book
     {
         System.out.println("The title is: " + title);
     }
-    
+    public void printDetails()
+    {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Pages: " + pages);
+    }
 }
