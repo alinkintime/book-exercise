@@ -73,10 +73,12 @@ class Book
         return borrowed;
     }
     
+    /** Get whether the book is a course textbook or not */
     public boolean iscourseText()
     {
         return courseText;
     }
+    
     /** Print's the author, title */
     public void printAuthor()
     {
@@ -86,7 +88,7 @@ class Book
     {
         System.out.println("The title is: " + title);
     }
-    /** Print's the book's Details */
+    /** Print's the book's Details (title, author, pages, referance number, borrowed) */
     public void printDetails()
     {
         System.out.println("Title: " + title);
