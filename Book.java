@@ -29,7 +29,14 @@ class Book
     /** Sets the book's referance number */
         public void setRefNumber(String ref)
     {
-        refNumber = ref;
+        if (ref.length() >= 3) 
+        {
+            refNumber = ref;
+        }
+        else 
+        {
+            System.out.println ("Error, referance must be at least 3 characters long");
+        }
     }
     
     /**Return's author, title and pages */
@@ -69,7 +76,7 @@ class Book
         System.out.println("Pages: " + pages);
         
         String refNumberString;
-        if(refNumber.length() > 0) 
+        if(refNumber.length() > 0 ) 
         {
             refNumberString = refNumber;
         }
