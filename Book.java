@@ -14,6 +14,7 @@ class Book
     private int pages;
     private String refNumber;
     private int borrowed;
+    private boolean courseText;
 
     /**
      * Set the author and title fields when this object
@@ -72,6 +73,10 @@ class Book
         return borrowed;
     }
     
+    public boolean iscourseText()
+    {
+        return courseText;
+    }
     /** Print's the author, title */
     public void printAuthor()
     {
@@ -100,5 +105,4 @@ class Book
         System.out.println("Referance Number: " +  refNumberString);
         System.out.println("This book as been borrowed " + borrowed + "times.");
     }
-    
 }
